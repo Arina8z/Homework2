@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Приложение для заказа дорожных билетов"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#068FB1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdIn"
+        app:layout_constraintVertical_bias="0.064">
+
+        <EditText
+            android:id="@+id/placeOtIn"
+            android:layout_width="171dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="5dp"
+            android:background="#E1ECEF"
+            android:ems="10"
+            android:hint="Место отправления поезда"
+            android:paddingStart="14sp"
+            android:textColor="#068FB1"
+            android:textColorHint="#87A3AA"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdIn" />
+
+        <EditText
+        android:id="@+id/placePribIn"
+        android:layout_width="171dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint="Место прибытия поезда"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdIn" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/IdIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Id пользователя"
+        android:paddingStart="14sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:background="#E1ECEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/priceIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint="Цена билета"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Готово"
+        android:textSize="16sp"
+        android:backgroundTint="#068FB1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceIn" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout2"
+        app:layout_constraintVertical_bias="0.064">
+
+        <EditText
+            android:id="@+id/timeOtIn"
+            android:layout_width="171dp"
+            android:layout_height="70dp"
+
+            android:layout_marginEnd="5dp"
+            android:background="#E1ECEF"
+            android:ems="0"
+            android:hint="Время отправления поезда"
+            android:paddingStart="14sp"
+            android:textColor="#068FB1"
+            android:textColorHint="#87A3AA"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/timePribIn"
+            android:layout_width="171dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:background="#E1ECEF"
+            android:ems="0"
+            android:hint="Время прибытия поезда"
+            android:paddingStart="14sp"
+            android:textColor="#068FB1"
+            android:textColorHint="#87A3AA"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
